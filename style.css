@@ -10,7 +10,7 @@
 }
 
 html {
-  font-size: 62.5%; /* Tăng font-size cơ bản để dễ đọc hơn */
+  font-size: 62.5%;
   overflow-x: hidden;
 }
 
@@ -52,7 +52,7 @@ body {
 .logo {
   font-size: 2.5rem;
   color: var(--text-color);
-  font-weight: 800; /* ĐÃ SỬA LỖI: font-down thành font-weight */
+  font-weight: 800;
   cursor: pointer;
   transition: 0.3s ease;
 }
@@ -187,7 +187,7 @@ section {
   color: var(--bg-color);
 }
 
-.About {
+.about {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -297,7 +297,9 @@ section {
   color: var(--bg-color);
 }
 
+/* Awards */
 .awards-container {
+  /* Đã cập nhật tên class */
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 2rem;
@@ -423,7 +425,7 @@ section {
 }
 
 /* Skills */
-.Skills {
+.skills {
   background: var(--second-bg-color);
   padding: 10rem 12% 2rem;
 }
@@ -437,7 +439,7 @@ section {
 
 .skills-container {
   display: grid;
-  grid-template-columns: 1fr 2fr; /* Cột trái (ngôn ngữ) nhỏ hơn, cột phải (thanh tiến độ) rộng hơn */
+  grid-template-columns: 1fr 2fr;
   gap: 4rem;
   align-items: flex-start;
 }
@@ -479,34 +481,26 @@ section {
 
 .skill-bar {
   margin-bottom: 2.5rem;
-  /* THÊM CÁC THUỘC TÍNH NÀY CHO HIỆU ỨNG HOVER */
-  background: rgba(
-    0,
-    0,
-    0,
-    0.3
-  ); /* Cùng màu nền với .skills-left/.skills-right */
-  border-radius: 1rem; /* Bo góc để khớp với containers */
-  padding: 1.5rem 2rem; /* Thêm padding cho nội dung bên trong */
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease; /* Thêm transition */
-  border: 2px solid transparent; /* Viền ban đầu trong suốt hoặc cùng màu nền */
-  box-shadow: 0 0 0 transparent; /* Đổ bóng ban đầu trong suốt */
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 1rem;
+  padding: 1.5rem 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  border: 2px solid transparent;
+  box-shadow: 0 0 0 transparent;
 }
 
 .skill-bar:hover {
-  transform: translateY(-5px); /* Dịch chuyển lên trên 5px */
-  box-shadow: 0 0 15px var(--main-color); /* Đổ bóng màu xanh lá cây khi hover */
-  border-color: var(--hover-color); /* Đổi màu viền thành xanh ngọc khi hover */
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px var(--main-color);
+  border-color: var(--hover-color);
 }
 
-/* Bạn cũng có thể muốn thay đổi màu thanh tiến trình khi hover */
 .skill-bar:hover .bar span {
-  background: var(--hover-color); /* Thay đổi màu thanh tiến trình khi hover */
+  background: var(--hover-color);
 }
 
-/* Optional: Nếu bạn muốn chữ bên trong cũng đổi màu khi hover */
 .skill-bar:hover .info p {
-  color: var(--hover-color); /* Đổi màu chữ skill name và phần trăm */
+  color: var(--hover-color);
 }
 
 .skill-bar .info {
@@ -574,41 +568,39 @@ section {
   flex-wrap: wrap;
 }
 
-/* THÊM CSS CHO HIỆU ỨNG OVERLAY TRÊN ẢNH DỰ ÁN */
-/* Container mới cho ảnh và overlay */
 .project-link-wrapper {
-  display: block; /* Quan trọng: làm cho link bọc toàn bộ khối */
-  text-decoration: none; /* Loại bỏ gạch chân link */
-  color: inherit; /* Kế thừa màu chữ */
+  display: block;
+  text-decoration: none;
+  color: inherit;
   width: 100%;
-  max-width: 300px; /* Cần khớp với max-width của project-image-wrapper */
+  max-width: 300px;
   border-radius: 10px;
-  overflow: hidden; /* Quan trọng để cắt nội dung thừa */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Di chuyển shadow ra đây */
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Thêm transition cho hover tổng thể */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-link-wrapper:hover {
-  transform: scale(1.03); /* Phóng to nhẹ toàn bộ khu vực link */
-  box-shadow: 0 0 20px var(--main-color); /* Thêm shadow khi hover */
+  transform: scale(1.03);
+  box-shadow: 0 0 20px var(--main-color);
 }
 
 .project-image-wrapper {
-  position: relative; /* Quan trọng: làm cho overlay định vị theo wrapper này */
+  position: relative;
   width: 100%;
-  height: 100%; /* Chiếm hết chiều cao của project-link-wrapper */
+  height: 100%;
   border-radius: 10px;
-  overflow: hidden; /* Cắt bỏ phần thừa nếu ảnh phóng to */
+  overflow: hidden;
 }
 
 .project-image-wrapper img {
   width: 100%;
-  height: 100%; /* Đảm bảo ảnh lấp đầy wrapper */
-  object-fit: cover; /* Giữ tỷ lệ ảnh */
+  height: 100%;
+  object-fit: cover;
   border-radius: 10px;
-  transition: transform 0.5s ease; /* Ảnh sẽ phóng to mượt mà */
-  display: block; /* Quan trọng để tránh khoảng trắng dưới ảnh */
+  transition: transform 0.5s ease;
+  display: block;
 }
 
 .project-overlay {
@@ -617,18 +609,13 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(
-    0,
-    255,
-    81,
-    0.7
-  ); /* Màu xanh lá semi-transparent (main-color với opacity) */
+  background: rgba(0, 255, 81, 0.7);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  opacity: 0; /* Ban đầu ẩn */
-  transition: opacity 0.5s ease; /* Hiện/ẩn mượt mà */
+  opacity: 0;
+  transition: opacity 0.5s ease;
   border-radius: 10px;
   text-align: center;
   padding: 1rem;
@@ -636,7 +623,7 @@ section {
 
 .project-overlay h4 {
   font-size: 2rem;
-  color: var(--bg-color); /* Chữ màu nền của bạn */
+  color: var(--bg-color);
   margin-bottom: 0.5rem;
 }
 
@@ -647,20 +634,19 @@ section {
 }
 
 .project-overlay .overlay-btn {
-  display: inline-flex; /* Để icon căn giữa */
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   width: 4rem;
   height: 4rem;
-  background: var(--bg-color); /* Màu nền nút */
-  color: var(--main-color); /* Màu icon */
+  background: var(--bg-color);
+  color: var(--main-color);
   border-radius: 50%;
   font-size: 2rem;
   transition: 0.3s ease;
-  /* Đảm bảo nút luôn hiển thị và có thể nhấp */
-  opacity: 1; /* Loại bỏ opacity:0; từ overlay cho nút này */
-  z-index: 2; /* Đảm bảo nút nằm trên overlay */
-  text-decoration: none; /* Đảm bảo không có gạch chân nếu là link */
+  opacity: 1;
+  z-index: 2;
+  text-decoration: none;
 }
 
 .project-overlay .overlay-btn:hover {
@@ -668,16 +654,13 @@ section {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-/* HIỆU ỨNG KHI HOVER LÊN project-link-wrapper */
 .project-link-wrapper:hover .project-overlay {
-  /* Áp dụng hover cho link wrapper để hiện overlay */
-  opacity: 1; /* Hiển thị overlay */
+  opacity: 1;
 }
 
 .project-link-wrapper:hover img {
-  transform: scale(1.1); /* Phóng to ảnh bên trong */
+  transform: scale(1.1);
 }
-/* KẾT THÚC CSS HIỆU ỨNG OVERLAY TRÊN ẢNH DỰ ÁN */
 
 .project-details {
   flex: 1;
@@ -705,13 +688,13 @@ section {
 }
 
 /* Contact */
-.Contact h2 {
+.contact h2 {
   text-align: center;
   font-size: 4.5rem;
   margin-bottom: 3rem;
 }
 
-.Contact form {
+.contact form {
   max-width: 600px;
   margin: 0 auto;
 }
@@ -728,7 +711,7 @@ section {
 }
 
 .input-box input,
-.Contact form textarea {
+.contact form textarea {
   width: 100%;
   padding: 1.5rem;
   font-size: 1.6rem;
@@ -816,17 +799,16 @@ section {
     max-width: 200px;
   }
 
-  /* awards */
-  .services-container {
-    grid-template-columns: 1fr;
-  }
+  /* Awards Responsive */
   .awards-container {
+    /* Đã cập nhật tên class */
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
+
   /* Skills Responsive */
   .skills-container {
-    grid-template-columns: 1fr; /* Chuyển thành 1 cột trên mobile/tablet */
-    gap: 2rem; /* Giảm khoảng cách giữa hai cột khi chuyển sang 1 cột */
+    grid-template-columns: 1fr;
+    gap: 2rem;
   }
 
   .skills-left h2.heading1,
@@ -847,7 +829,6 @@ section {
     text-align: center;
   }
   .project-details {
-    /* Đảm bảo details cũng căn giữa trên mobile */
     flex: none;
     width: 100%;
   }
