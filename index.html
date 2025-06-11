@@ -19,9 +19,8 @@
             <a href="#Hobbies">Hobbies</a>
             <a href="#Skills">Skills</a>
             <a href="#projects">Project</a>
-            <a href="awards">Awards</a>
+            <a href="#Awards">Awards</a>
             <a href="#Contact">Contact</a>
-
         </nav>
     </header>
 
@@ -52,9 +51,13 @@
             <img src="./img/WIN_20250104_22_10_38_Pro.jpg" alt="Profile Image">
         </div>
         <div class="about-content">
-            <h2>About <span>Me</span></h2>
-            <p>I'm a dedicated BackEnd Developer with experience in building efficient server-side applications. I enjoy
-                solving complex problems and learning new technologies.</p>
+            <div class="about-box">
+                <h2>About <span>Me</span></h2>
+                <p>Hello! I'm Ngô Hoàng Anh, a second-year Information Technology student at the University of Transport
+                    and Communications (UTH) in Ho Chi Minh City. I have a strong passion for web development and am
+                    constantly learning to become a professional developer. I'm especially interested in frontend
+                    development and building modern, user-friendly websites.</p>
+            </div>
             <a href="#" class="btn">Read more</a>
         </div>
     </section>
@@ -87,147 +90,182 @@
                 </div>
             </div>
         </div>
-
-        <section class="Hobbies" id="Hobbies">
-            <h2 class="heading">Hobbies</h2>
-            <div class="services-container">
-                <div class="services-box">
-                    <div class="service-info">
-                        <i class="bx bx-book-open"></i>
-                        <h4>Reading Books</h4>
-                        <p>I love diving into tech books and novels to expand my knowledge and spark creativity.</p>
-
-                    </div>
-                </div>
-                <div class="services-box">
-                    <div class="service-info">
-                        <i class="bx bx-headphone"></i>
-                        <h4>Listening to Music</h4>
-                        <p>Music keeps me relaxed and focused while coding or exploring new ideas.</p>
-
-                    </div>
-                </div>
-                <div class="services-box">
-                    <div class="service-info">
-                        <i class="bx bx-joystick"></i>
-                        <h4>Playing Games</h4>
-                        <p>Strategy and puzzle games sharpen my problem-solving skills, which I apply to coding
-                            challenges.
-                        </p>
-
-                    </div>
-                </div>
-                <div class="services-box">
-                    <div class="service-info">
-                        <i class="bx bx-code-alt"></i>
-                        <h4>Programming & Exploring</h4>
-                        <p>I enjoy building side projects and experimenting with new tools and frameworks to stay ahead
-                            in
-                            tech.</p>
-
-                    </div>
+        <!-- Modals for Awards -->
+        <div class="modal" id="award1">
+            <div class="modal-content">
+                <span class="close">×</span>
+                <h3></h3>
+                <p></p>
+            </div>
+        </div>
+        <div class="modal" id="award2">
+            <div class="modal-content">
+                <span class="close">×</span>
+                <h3></h3>
+                <p></p>
+            </div>
+        </div>
+        <div class="modal" id="award3">
+            <div class="modal-content">
+                <span class="close">×</span>
+                <h3></h3>
+                <p></p>
+            </div>
+        </div>
+    </section>
+    <!-- Hobbies -->
+    <section class="Hobbies" id="Hobbies">
+        <h2 class="heading">Hobbies</h2>
+        <div class="services-container">
+            <div class="services-box">
+                <div class="service-info">
+                    <i class="bx bx-book-open"></i>
+                    <h4>Reading Books</h4>
+                    <p>I love diving into tech books and novels to expand my knowledge and spark creativity.</p>
                 </div>
             </div>
-        </section>
-
-        <section class="Skills" id="Skills">
-            <h1 class="sub-title">My <span>Skills</span></h1>
-            <div class="skill-main">
-                <div class="skills-left">
-                    <h1 class="heading1">Technical <span>Skills</span></h1>
-                    <div class="skill-bar">
-                        <div class="info">
-                            <p>HTML</p>
-                            <p>72%</p>
-                        </div>
-                        <div class="bar"><span class="html"></span></div>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="info">
-                            <p>Figma</p>
-                            <p>80%</p>
-                        </div>
-                        <div class="bar"><span class="figma"></span></div>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="info">
-                            <p>JavaScript</p>
-                            <p>65%</p>
-                        </div>
-                        <div class="bar"><span class="javascript"></span></div>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="info">
-                            <p>CSS</p>
-                            <p>70%</p>
-                        </div>
-                        <div class="bar"><span class="css"></span></div>
-                    </div>
+            <div class="services-box">
+                <div class="service-info">
+                    <i class="bx bx-headphone"></i>
+                    <h4>Listening to Music</h4>
+                    <p>Music keeps me relaxed and focused while coding or exploring new ideas.</p>
                 </div>
             </div>
-        </section>
-
-        <section id="projects" class="projects">
-            <div class="container">
-                <h2>My Projects</h2>
-                <div class="project-item">
-                    <a href="https://anh26092005.github.io/docter-figma/" target="_blank"><img src="./img/projec1.png"
-                            alt="Project 1"></a>
-                    <div class="project-details">
-                        <h3>Project 1: Personal Portfolio Website</h3>
-                        <p>A responsive personal website built with HTML, CSS, and JavaScript.</p>
-                        <a href="https://github.com/anh26092005/docter-figma" target="_blank">View on GitHub</a>
-                    </div>
-                </div>
-                <div class="project-item">
-                    <img src="https://via.placeholder.com/300x200" alt="Project 2">
-                    <div class="project-details">
-                        <h3>Project 2: Weather App</h3>
-                        <p>A weather forecast app using OpenWeather API and JavaScript.</p>
-                        <a href="https://yourweatherappdemo.com" target="_blank">Live Demo</a>
-                    </div>
+            <div class="services-box">
+                <div class="service-info">
+                    <i class="bx bx-joystick"></i>
+                    <h4>Playing Games</h4>
+                    <p>Strategy and puzzle games sharpen my problem-solving skills, which I apply to coding challenges.
+                    </p>
                 </div>
             </div>
-        </section>
-
-        <section class="Contact" id="Contact">
-            <h2 class="heading">Contact <span>Me</span></h2>
-            <form action="">
-                <div class="input-group">
-                    <div class="input-box">
-                        <input type="text" placeholder="Full Name" required>
-                        <input type="email" placeholder="Email" required>
-                    </div>
-                    <div class="input-box">
-                        <input type="text" placeholder="Phone Number">
-                        <input type="text" placeholder="Subject">
-                    </div>
+            <div class="services-box">
+                <div class="service-info">
+                    <i class="bx bx-code-alt"></i>
+                    <h4>Programming & Exploring</h4>
+                    <p>I enjoy building side projects and experimenting with new tools and frameworks to stay ahead in
+                        tech.</p>
                 </div>
-                <div class="input-group-2">
-                    <textarea name="" cols="30" rows="10" placeholder="Your Message" required></textarea>
-                    <input type="submit" value="Send Message" class="btn">
-                </div>
-            </form>
-        </section>
-
-        <footer class="footer">
-            <div class="social-icons">
-                <a href="https://www.facebook.com/hoang.anh.447742"><i class="bx bxl-facebook"></i></a>
-                <a href="https://www.instagram.com/ng.h.anh21/"><i class="bx bxl-instagram"></i></a>
-                <a href="https://github.com/anh26092005"><i class="bx bxl-github"></i></a>
-                <a href="https://www.linkedin.com/in/ho%C3%A0ng-anh-anh-30158034b/"><i
-                        class="bx bxl-linkedin-square"></i></a>
             </div>
-            <ul class="list">
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#Hobbies">Services</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#Contact">Contact</a></li>
-            </ul>
-            <p class="copyright">© 2025 Ngô Hoàng Anh | All Rights Reserved</p>
-        </footer>
+        </div>
+    </section>
+    <!-- Skill -->
+    <section class="Skills" id="Skills">
+        <h1 class="sub-title">My <span>Skills</span></h1>
+        <div class="skills-container">
+            <div class="skills-left">
+                <h2 class="heading1">Languages & Tools</h2>
+                <ul class="skill-list">
+                    <li><i class='bx bxl-html5' style="color: #c95d2e;"></i> HTML</li>
+                    <li><i class='bx bxl-figma' style="color: #A259FF;"></i> Figma</li>
+                    <li><i class='bx bxl-javascript' style=" color: #F7DF1E"></i> JavaScript</li>
+                    <li><i class='bx bxl-css3' style="color: #147cce;"></i> CSS</li>
+                    <li><i class='bx bxl-react' style="color: #61DAFB"></i> React</li>
+                </ul>
+            </div>
+            <div class="skills-right">
+                <h2 class="heading1">Technical Skills</h2>
+                <div class="skill-bar">
+                    <div class="info">
+                        <p>HTML</p>
+                        <p>72%</p>
+                    </div>
+                    <div class="bar"><span class="html"></span></div>
+                </div>
+                <div class="skill-bar">
+                    <div class="info">
+                        <p>Figma</p>
+                        <p>72%</p>
+                    </div>
+                    <div class="bar"><span class="figma"></span></div>
+                </div>
+                <div class="skill-bar">
+                    <div class="info">
+                        <p>JavaScript</p>
+                        <p>65%</p>
+                    </div>
+                    <div class="bar"><span class="javascript"></span></div>
+                </div>
+                <div class="skill-bar">
+                    <div class="info">
+                        <p>CSS</p>
+                        <p>74%</p>
+                    </div>
+                    <div class="bar"><span class="css"></span></div>
+                </div>
+                <div class="skill-bar">
+                    <div class="info">
+                        <p>React</p>
+                        <p>70%</p>
+                    </div>
+                    <div class="bar"><span class="React"></span></div>
+                </div>
+            </div> ```
 
-        <script src="main.js"></script>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="project-item">
+                <a href="https://anh26092005.github.io/docter-figma/" target="_blank"><img src="./img/projec1.png"
+                        alt="Project 1"></a>
+                <div class="project-details">
+                    <h3>Project 1: Personal Portfolio Website</h3>
+                    <p>A responsive personal website built with HTML, CSS, and JavaScript.</p>
+                    <a href="https://github.com/anh26092005/docter-figma" target="_blank">View on GitHub</a>
+                </div>
+            </div>
+            <div class="project-item">
+                <img src="https://via.placeholder.com/300x200" alt="Project 2">
+                <div class="project-details">
+                    <h3>Project 2: Weather App</h3>
+                    <p>A weather forecast app using OpenWeather API and JavaScript.</p>
+                    <a href="https://yourweatherappdemo.com" target="_blank">Live Demo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="Contact" id="Contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+        <form action="">
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="text" placeholder="Full Name" required>
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <div class="input-box">
+                    <input type="text" placeholder="Phone Number">
+                    <input type="text" placeholder="Subject">
+                </div>
+            </div>
+            <div class="input-group-2">
+                <textarea name="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                <input type="submit" value="Send Message" class="btn">
+            </div>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="social-icons">
+            <a href="https://www.facebook.com/hoang.anh.447742"><i class="bx bxl-facebook"></i></a>
+            <a href="https://www.instagram.com/ng.h.anh21/"><i class="bx bxl-instagram"></i></a>
+            <a href="https://github.com/anh26092005"><i class="bx bxl-github"></i></a>
+            <a href="https://www.linkedin.com/in/ho%C3%A0ng-anh-anh-30158034b/"><i
+                    class="bx bxl-linkedin-square"></i></a>
+        </div>
+        <ul class="list">
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#Hobbies">Services</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#Contact">Contact</a></li>
+        </ul>
+        <p class="copyright">© 2025 Ngô Hoàng Anh | All Rights Reserved</p>
+    </footer>
+
+    <script src="main.js"></script>
 </body>
 
 </html>
