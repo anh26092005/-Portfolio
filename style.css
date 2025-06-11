@@ -52,7 +52,7 @@ body {
 .logo {
   font-size: 2.5rem;
   color: var(--text-color);
-  font-down: 800;
+  font-weight: 800; /* ĐÃ SỬA LỖI: font-down thành font-weight */
   cursor: pointer;
   transition: 0.3s ease;
 }
@@ -116,7 +116,7 @@ section {
 }
 
 .home-content p {
-  font-size: 1.6rem;
+  font-size: 1.9rem;
   line-height: 1.8;
   margin-bottom: 2rem;
 }
@@ -479,6 +479,34 @@ section {
 
 .skill-bar {
   margin-bottom: 2.5rem;
+  /* THÊM CÁC THUỘC TÍNH NÀY CHO HIỆU ỨNG HOVER */
+  background: rgba(
+    0,
+    0,
+    0,
+    0.3
+  ); /* Cùng màu nền với .skills-left/.skills-right */
+  border-radius: 1rem; /* Bo góc để khớp với containers */
+  padding: 1.5rem 2rem; /* Thêm padding cho nội dung bên trong */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease; /* Thêm transition */
+  border: 2px solid transparent; /* Viền ban đầu trong suốt hoặc cùng màu nền */
+  box-shadow: 0 0 0 transparent; /* Đổ bóng ban đầu trong suốt */
+}
+
+.skill-bar:hover {
+  transform: translateY(-5px); /* Dịch chuyển lên trên 5px */
+  box-shadow: 0 0 15px var(--main-color); /* Đổ bóng màu xanh lá cây khi hover */
+  border-color: var(--hover-color); /* Đổi màu viền thành xanh ngọc khi hover */
+}
+
+/* Bạn cũng có thể muốn thay đổi màu thanh tiến trình khi hover */
+.skill-bar:hover .bar span {
+  background: var(--hover-color); /* Thay đổi màu thanh tiến trình khi hover */
+}
+
+/* Optional: Nếu bạn muốn chữ bên trong cũng đổi màu khi hover */
+.skill-bar:hover .info p {
+  color: var(--hover-color); /* Đổi màu chữ skill name và phần trăm */
 }
 
 .skill-bar .info {
@@ -522,6 +550,9 @@ section {
 .skill-bar .bar .React {
   width: 70%;
 }
+.skill-bar .bar .Nodejs {
+  width: 67%;
+}
 
 /* Projects */
 .projects {
@@ -543,12 +574,110 @@ section {
   flex-wrap: wrap;
 }
 
-.project-item img {
+/* THÊM CSS CHO HIỆU ỨNG OVERLAY TRÊN ẢNH DỰ ÁN */
+/* Container mới cho ảnh và overlay */
+.project-link-wrapper {
+  display: block; /* Quan trọng: làm cho link bọc toàn bộ khối */
+  text-decoration: none; /* Loại bỏ gạch chân link */
+  color: inherit; /* Kế thừa màu chữ */
   width: 100%;
-  max-width: 300px;
+  max-width: 300px; /* Cần khớp với max-width của project-image-wrapper */
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden; /* Quan trọng để cắt nội dung thừa */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Di chuyển shadow ra đây */
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Thêm transition cho hover tổng thể */
 }
+
+.project-link-wrapper:hover {
+  transform: scale(1.03); /* Phóng to nhẹ toàn bộ khu vực link */
+  box-shadow: 0 0 20px var(--main-color); /* Thêm shadow khi hover */
+}
+
+.project-image-wrapper {
+  position: relative; /* Quan trọng: làm cho overlay định vị theo wrapper này */
+  width: 100%;
+  height: 100%; /* Chiếm hết chiều cao của project-link-wrapper */
+  border-radius: 10px;
+  overflow: hidden; /* Cắt bỏ phần thừa nếu ảnh phóng to */
+}
+
+.project-image-wrapper img {
+  width: 100%;
+  height: 100%; /* Đảm bảo ảnh lấp đầy wrapper */
+  object-fit: cover; /* Giữ tỷ lệ ảnh */
+  border-radius: 10px;
+  transition: transform 0.5s ease; /* Ảnh sẽ phóng to mượt mà */
+  display: block; /* Quan trọng để tránh khoảng trắng dưới ảnh */
+}
+
+.project-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(
+    0,
+    255,
+    81,
+    0.7
+  ); /* Màu xanh lá semi-transparent (main-color với opacity) */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0; /* Ban đầu ẩn */
+  transition: opacity 0.5s ease; /* Hiện/ẩn mượt mà */
+  border-radius: 10px;
+  text-align: center;
+  padding: 1rem;
+}
+
+.project-overlay h4 {
+  font-size: 2rem;
+  color: var(--bg-color); /* Chữ màu nền của bạn */
+  margin-bottom: 0.5rem;
+}
+
+.project-overlay p {
+  font-size: 1.4rem;
+  color: var(--bg-color);
+  margin-bottom: 1rem;
+}
+
+.project-overlay .overlay-btn {
+  display: inline-flex; /* Để icon căn giữa */
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  background: var(--bg-color); /* Màu nền nút */
+  color: var(--main-color); /* Màu icon */
+  border-radius: 50%;
+  font-size: 2rem;
+  transition: 0.3s ease;
+  /* Đảm bảo nút luôn hiển thị và có thể nhấp */
+  opacity: 1; /* Loại bỏ opacity:0; từ overlay cho nút này */
+  z-index: 2; /* Đảm bảo nút nằm trên overlay */
+  text-decoration: none; /* Đảm bảo không có gạch chân nếu là link */
+}
+
+.project-overlay .overlay-btn:hover {
+  color: var(--hover-color);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* HIỆU ỨNG KHI HOVER LÊN project-link-wrapper */
+.project-link-wrapper:hover .project-overlay {
+  /* Áp dụng hover cho link wrapper để hiện overlay */
+  opacity: 1; /* Hiển thị overlay */
+}
+
+.project-link-wrapper:hover img {
+  transform: scale(1.1); /* Phóng to ảnh bên trong */
+}
+/* KẾT THÚC CSS HIỆU ỨNG OVERLAY TRÊN ẢNH DỰ ÁN */
 
 .project-details {
   flex: 1;
@@ -694,9 +823,12 @@ section {
   .awards-container {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
+  /* Skills Responsive */
   .skills-container {
-    grid-template-columns: 1fr; /* Chuyển thành 1 cột trên mobile */
+    grid-template-columns: 1fr; /* Chuyển thành 1 cột trên mobile/tablet */
+    gap: 2rem; /* Giảm khoảng cách giữa hai cột khi chuyển sang 1 cột */
   }
+
   .skills-left h2.heading1,
   .skills-right h2.heading1 {
     font-size: 2rem;
@@ -712,6 +844,16 @@ section {
   }
   .project-item {
     flex-direction: column;
+    text-align: center;
+  }
+  .project-details {
+    /* Đảm bảo details cũng căn giữa trên mobile */
+    flex: none;
+    width: 100%;
+  }
+  .project-details h3,
+  .project-details p,
+  .project-details a {
     text-align: center;
   }
 }

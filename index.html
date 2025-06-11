@@ -58,64 +58,12 @@
                     constantly learning to become a professional developer. I'm especially interested in frontend
                     development and building modern, user-friendly websites.</p>
             </div>
-            <a href="#" class="btn">Read more</a>
+
         </div>
     </section>
-    <!-- Awards -->
-    <section class="Awards" id="Awards">
-        <h2 class="heading">Awards & <span>Achievements</span></h2>
-        <div class="awards-container">
-            <div class="awards-box">
-                <div class="award-info">
-                    <i class="bx bx-trophy"></i>
-                    <h4></h4>
-                    <p></p>
-                    <a href="#" class="btn" data-modal="award1">Read More</a>
-                </div>
-            </div>
-            <div class="awards-box">
-                <div class="award-info">
-                    <i class="bx bx-medal"></i>
-                    <h4></h4>
-                    <p></p>
-                    <a href="#" class="btn" data-modal="award2">Read More</a>
-                </div>
-            </div>
-            <div class="awards-box">
-                <div class="award-info">
-                    <i class="bx bx-certification"></i>
-                    <h4></h4>
-                    <p></p>
-                    <a href="#" class="btn" data-modal="award3">Read More</a>
-                </div>
-            </div>
-        </div>
-        <!-- Modals for Awards -->
-        <div class="modal" id="award1">
-            <div class="modal-content">
-                <span class="close">×</span>
-                <h3></h3>
-                <p></p>
-            </div>
-        </div>
-        <div class="modal" id="award2">
-            <div class="modal-content">
-                <span class="close">×</span>
-                <h3></h3>
-                <p></p>
-            </div>
-        </div>
-        <div class="modal" id="award3">
-            <div class="modal-content">
-                <span class="close">×</span>
-                <h3></h3>
-                <p></p>
-            </div>
-        </div>
-    </section>
-    <!-- Hobbies -->
+
     <section class="Hobbies" id="Hobbies">
-        <h2 class="heading">Hobbies</h2>
+        <h1 class="sub-title">Hobbies</h1>
         <div class="services-container">
             <div class="services-box">
                 <div class="service-info">
@@ -149,7 +97,6 @@
             </div>
         </div>
     </section>
-    <!-- Skill -->
     <section class="Skills" id="Skills">
         <h1 class="sub-title">My <span>Skills</span></h1>
         <div class="skills-container">
@@ -159,8 +106,10 @@
                     <li><i class='bx bxl-html5' style="color: #c95d2e;"></i> HTML</li>
                     <li><i class='bx bxl-figma' style="color: #A259FF;"></i> Figma</li>
                     <li><i class='bx bxl-javascript' style=" color: #F7DF1E"></i> JavaScript</li>
+                    <li><i class='bx bxl-nodejs' style="color: #339933"></i> Nodejs</li>
                     <li><i class='bx bxl-css3' style="color: #147cce;"></i> CSS</li>
                     <li><i class='bx bxl-react' style="color: #61DAFB"></i> React</li>
+
                 </ul>
             </div>
             <div class="skills-right">
@@ -188,6 +137,14 @@
                 </div>
                 <div class="skill-bar">
                     <div class="info">
+                        <p>Nodejs</p>
+                        <p>67%</p>
+                    </div>
+                    <div class="bar"><span class="Nodejs"></span></div>
+                </div>
+
+                <div class="skill-bar">
+                    <div class="info">
                         <p>CSS</p>
                         <p>74%</p>
                     </div>
@@ -200,17 +157,23 @@
                     </div>
                     <div class="bar"><span class="React"></span></div>
                 </div>
-            </div> ```
-
+            </div>
         </div>
-    </section>
 
+    </section>
     <section id="projects" class="projects">
         <div class="container">
-            <h2>My Projects</h2>
+            <h1 class="sub-title">My <span>Project</span></h1>
             <div class="project-item">
-                <a href="https://anh26092005.github.io/docter-figma/" target="_blank"><img src="./img/projec1.png"
-                        alt="Project 1"></a>
+                <a href="https://anh26092005.github.io/docter-figma/" target="_blank" class="project-link-wrapper">
+                    <div class="project-image-wrapper">
+                        <img src="./img/projec1.png" alt="Project 1">
+                        <div class="project-overlay">
+                            <h4>Project 1: Portfolio</h4>
+                            <p>Click to view project</p>
+                        </div>
+                    </div>
+                </a>
                 <div class="project-details">
                     <h3>Project 1: Personal Portfolio Website</h3>
                     <p>A responsive personal website built with HTML, CSS, and JavaScript.</p>
@@ -218,7 +181,15 @@
                 </div>
             </div>
             <div class="project-item">
-                <img src="https://via.placeholder.com/300x200" alt="Project 2">
+                <a href="https://yourweatherappdemo.com" target="_blank" class="project-link-wrapper">
+                    <div class="project-image-wrapper">
+                        <img src="https://via.placeholder.com/300x200" alt="Project 2">
+                        <div class="project-overlay">
+                            <h4>Project 2: Weather App</h4>
+                            <p>Click to view project</p>
+                        </div>
+                    </div>
+                </a>
                 <div class="project-details">
                     <h3>Project 2: Weather App</h3>
                     <p>A weather forecast app using OpenWeather API and JavaScript.</p>
@@ -228,21 +199,73 @@
         </div>
     </section>
 
+    <section class="Awards" id="Awards">
+        <h2 class="sub-title">Awards & <span>Achievements</span></h2>
+        <div class="awards-container">
+            <div class="awards-box">
+                <div class="award-info">
+                    <i class="bx bx-trophy"></i>
+                    <h4></h4>
+                    <p></p>
+
+                </div>
+            </div>
+            <div class="awards-box">
+                <div class="award-info">
+                    <i class="bx bx-medal"></i>
+                    <h4></h4>
+                    <p></p>
+
+
+                </div>
+            </div>
+            <div class="awards-box">
+                <div class="award-info">
+                    <i class="bx bx-certification"></i>
+                    <h4></h4>
+                    <p></p>
+
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="award1">
+            <div class="modal-content">
+                <span class="close">×</span>
+                <h3></h3>
+                <p></p>
+            </div>
+        </div>
+        <div class="modal" id="award2">
+            <div class="modal-content">
+                <span class="close">×</span>
+                <h3></h3>
+                <p></p>
+            </div>
+        </div>
+        <div class="modal" id="award3">
+            <div class="modal-content">
+                <span class="close">×</span>
+                <h3></h3>
+                <p></p>
+            </div>
+        </div>
+    </section>
+
     <section class="Contact" id="Contact">
         <h2 class="heading">Contact <span>Me</span></h2>
-        <form action="">
+        <form action="https://formspree.io/f/YOUR_UNIQUE_HASH" method="POST">
             <div class="input-group">
                 <div class="input-box">
-                    <input type="text" placeholder="Full Name" required>
-                    <input type="email" placeholder="Email" required>
+                    <input type="text" placeholder="Full Name" required name="full_name">
+                    <input type="email" placeholder="Email" required name="email">
                 </div>
                 <div class="input-box">
-                    <input type="text" placeholder="Phone Number">
-                    <input type="text" placeholder="Subject">
+                    <input type="text" placeholder="Phone Number" name="phone_number">
+                    <input type="text" placeholder="Subject" name="subject">
                 </div>
             </div>
             <div class="input-group-2">
-                <textarea name="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
                 <input type="submit" value="Send Message" class="btn">
             </div>
         </form>
@@ -257,8 +280,8 @@
                     class="bx bxl-linkedin-square"></i></a>
         </div>
         <ul class="list">
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#Hobbies">Services</a></li>
+            <li><a href="#Contact">FAQ</a></li>
+
             <li><a href="#about">About Me</a></li>
             <li><a href="#Contact">Contact</a></li>
         </ul>
