@@ -1,4 +1,3 @@
-/* Custom Scrollbar for Webkit browsers (Chrome, Safari, Edge) */
 ::-webkit-scrollbar {
   width: 12px;
   height: 12px;
@@ -19,13 +18,12 @@
   background: var(--hover-color);
 }
 
-/* Custom Scrollbar for Firefox */
 html {
   scrollbar-width: thin;
   scrollbar-color: var(--main-color) var(--bg-color);
 }
 
-/* Video Background Styles */
+/* Video Background  */
 .video-background {
   position: fixed;
   top: 0;
@@ -54,23 +52,17 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(
-    0,
-    0,
-    0,
-    0.15
-  ); /* Giảm độ mờ của lớp phủ video để video rõ hơn */
+  background: rgba(0, 0, 0, 0.15);
   z-index: 1;
 }
 
-/* Điều chỉnh lại màu nền cho header và sections để chúng vẫn hiển thị tốt */
 .header {
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
   padding: 2rem 12%;
-  background: rgba(0, 0, 0, 0.2); /* Giảm độ mờ của header */
+  background: rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(10px);
   display: flex;
   justify-content: space-between;
@@ -80,7 +72,7 @@ html {
 }
 
 .header.sticky {
-  background: rgba(0, 0, 0, 0.5); /* Giảm độ mờ của sticky header */
+  background: rgba(0, 0, 0, 0.5);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 
@@ -91,21 +83,19 @@ section {
   overflow: hidden;
   position: relative;
   z-index: 0;
-  background: rgba(8, 8, 8, 0.15); /* Giảm độ mờ của section chung */
+  background: rgba(8, 8, 8, 0.15);
 }
 
-/* Các section có nền --second-bg-color */
 .about,
 .skills,
 .projects,
 .awards,
 .contact {
-  background: rgba(0, 16, 5, 0.15); /* Giảm độ mờ của các section này */
+  background: rgba(0, 16, 5, 0.15);
 }
 
-/* about-box, skills-left, skills-right cũng cần nền rgba */
 .about-box {
-  background: rgba(0, 0, 0, 0.15); /* Giảm độ mờ */
+  background: rgba(0, 0, 0, 0.15);
   border: 2px solid var(--main-color);
   border-radius: 1rem;
   padding: 2rem;
@@ -113,7 +103,7 @@ section {
 }
 .skills-left,
 .skills-right {
-  background: rgba(0, 0, 0, 0.15); /* Giảm độ mờ */
+  background: rgba(0, 0, 0, 0.15);
   padding: 2rem;
   border-radius: 1rem;
   border: 2px solid var(--main-color);
@@ -126,10 +116,9 @@ section {
   text-align: center;
   width: 100%;
   overflow: hidden;
-  background: rgba(0, 0, 0, 0.15); /* Giảm độ mờ của footer */
+  background: rgba(0, 0, 0, 0.15);
 }
 
-/* CSS hiện tại của bạn (đã được sửa và tối ưu từ các lần trước) */
 * {
   margin: 0;
   padding: 0;
@@ -316,7 +305,7 @@ span {
   justify-content: center;
   align-items: center;
   gap: 5rem;
-  /* background: var(--second-bg-color); Đã chuyển lên trên */
+
   flex-wrap: wrap;
 }
 
@@ -868,7 +857,7 @@ span {
   text-align: center;
   width: 100%;
   overflow: hidden;
-  background: rgba(0, 0, 0, 0.15); /* Giảm độ mờ của footer */
+  background: rgba(0, 0, 0, 0.15);
 }
 
 .footer .social-icons {
