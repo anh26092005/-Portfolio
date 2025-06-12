@@ -302,7 +302,7 @@ section {
   margin-bottom: 2rem;
 }
 
-/* Hobbies Section - Tối ưu bằng class chung */
+/* Hobbies Section  */
 .hobbies-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -446,8 +446,8 @@ section {
   height: 100%;
   background: var(--main-color);
   border-radius: 25px;
-  width: var(--skill-width, 0); /* Sử dụng custom property */
-  transition: width 0.5s ease-in-out; /* Thêm hiệu ứng chuyển động */
+  width: var(--skill-width, 0);
+  transition: width 0.5s ease-in-out;
 }
 
 /* Projects Section */
