@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -20,7 +18,6 @@
   --neo-box-shadow: 0 0 5rem #12f7ff;
 }
 
-/* Đã gộp 2 khối html làm 1 */
 html {
   font-size: 62.5%;
   overflow-x: hidden;
@@ -33,6 +30,19 @@ body {
   color: var(--text-color);
   overflow-x: hidden;
   min-width: 320px;
+}
+
+/* Utility Class for Screen Readers */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
 }
 
 /* Scrollbar Style */
@@ -188,7 +198,7 @@ section {
 .home-content p {
   font-size: 1.9rem;
   line-height: 1.6;
-  text-align: l;
+  text-align: left;
   margin-bottom: 2rem;
 }
 .img13 {
@@ -267,7 +277,6 @@ section {
   width: 25vw;
   max-width: 300px;
 }
-
 .about-content {
   flex: 1;
   min-width: 300px;
@@ -280,7 +289,7 @@ section {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .about-box:hover {
-  box-shadow: 0 0 25px var(--main-color); /* Tạo vầng sáng neon */
+  box-shadow: 0 0 25px var(--main-color);
   transform: scale(1.03);
 }
 .about-box h2 {
@@ -300,7 +309,6 @@ section {
   gap: 2rem;
 }
 .info-box {
-  /* , awards... */
   background: transparent;
   border: 3px solid var(--main-color);
   border-radius: 2rem;
@@ -325,7 +333,6 @@ section {
   color: var(--bg-color);
 }
 .info-content {
-  /* Class chung */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -363,8 +370,8 @@ section {
   border: 2px solid var(--main-color);
   overflow: hidden;
 }
-.skills-left h2.heading1,
-.skills-right h2.heading1 {
+.skills-left h3.heading1,
+.skills-right h3.heading1 {
   font-size: 2.5rem;
   text-align: center;
   margin-bottom: 2rem;
@@ -387,7 +394,6 @@ section {
   transform: translateX(10px);
   color: var(--main-color);
 }
-
 .skill-list .bxl-html5 {
   color: #c95d2e;
 }
@@ -410,18 +416,16 @@ section {
 .skill-bar {
   margin-bottom: 2.5rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border-radius: 1rem; /* Thêm bo góc để shadow đẹp hơn */
+  border-radius: 1rem;
 }
 .skill-bar:hover .bar span {
-  background: var(--main-color);
+  background: var(--hover-color);
 }
-
 .skill-bar:hover .info p {
   transition: 0.4s ease;
   transform: translateX(6px);
   color: var(--main-color);
 }
-
 .skill-bar .info {
   display: flex;
   justify-content: space-between;
@@ -429,7 +433,6 @@ section {
   font-size: 1.6rem;
   margin-bottom: 0.5rem;
 }
-
 .skill-bar .bar {
   width: 100%;
   height: 10px;
@@ -443,24 +446,8 @@ section {
   height: 100%;
   background: var(--main-color);
   border-radius: 25px;
-}
-.skill-bar .bar .html {
-  width: 72%;
-}
-.skill-bar .bar .figma {
-  width: 72%;
-}
-.skill-bar .bar .javascript {
-  width: 65%;
-}
-.skill-bar .bar .css {
-  width: 74%;
-}
-.skill-bar .bar .React {
-  width: 70%;
-}
-.skill-bar .bar .Nodejs {
-  width: 67%;
+  width: var(--skill-width, 0); /* Sử dụng custom property */
+  transition: width 0.5s ease-in-out; /* Thêm hiệu ứng chuyển động */
 }
 
 /* Projects Section */
@@ -622,7 +609,6 @@ section {
 }
 
 /* --- RESPONSIVE DESIGN --- */
-
 @media (max-width: 1024px) {
   .header {
     padding: 2rem 8%;
@@ -637,7 +623,6 @@ section {
     font-size: 2.8rem;
   }
 }
-
 @media (max-width: 768px) {
   html {
     font-size: 55%;
@@ -645,12 +630,10 @@ section {
   .header {
     padding: 2rem 5%;
   }
-
   section {
     padding: 8rem 5% 6rem;
     min-height: auto;
   }
-
   #menu-icon {
     display: block;
   }
@@ -660,7 +643,6 @@ section {
     left: 0;
     width: 100%;
     padding: 1rem 5%;
-
     background: rgba(8, 8, 8, 0.95);
     border-bottom: 2px solid var(--main-color);
     display: none;
@@ -686,30 +668,25 @@ section {
     text-align: center;
     max-width: 100%;
   }
-
   .home-content .social-icons,
   .home-content .btn-group {
     justify-content: center;
     width: 100%;
   }
-
   .home-img {
     margin-top: 10rem;
     width: 60vw;
     max-width: 250px;
   }
-
   .home-img img {
     width: 100%;
     height: auto;
     aspect-ratio: 1 / 1;
   }
-
   .about {
     flex-direction: column;
     gap: 3rem;
   }
-
   .hobbies-container {
     grid-template-columns: 1fr;
   }
@@ -735,7 +712,6 @@ section {
     gap: 1rem;
   }
 }
-
 @media (max-width: 480px) {
   html {
     font-size: 50%;

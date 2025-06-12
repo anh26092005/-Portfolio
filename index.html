@@ -5,19 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ngô Hoàng Anh - Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 </head>
+<!-- video black ground -->
 
 <body>
-    <!-- video nền -->
     <div class="video-background">
         <div class="video-overlay"></div>
         <video autoplay loop muted playsinline>
             <source src="./img/1175-143563015_medium.mp4" type="video/mp4">
         </video>
     </div>
-    <!-- menu -->
     <header class="header">
         <a href="#home" class="logo" aria-label="Trang chủ Ngô Hoàng Anh">Ngô <span>HoangAnh</span></a>
         <i class="bx bx-menu" id="menu-icon"></i>
@@ -30,7 +35,7 @@
             <a href="#contact">Contact</a>
         </nav>
     </header>
-    <!-- introduce -->
+    <!-- menu -->
     <section class="home" id="home">
         <div class="home-content">
             <h1>Hi, It's <span>HoangAnh</span></h1>
@@ -59,7 +64,7 @@
             <img class="img13" src="./img/Screenshot 2025-06-11 230336.png" alt="Profile Image">
         </div>
     </section>
-
+    <!-- about -->
     <section class="about" id="about">
         <div class="home-img">
             <img class="img12" src="./img/2ae71279-d732-465b-a4cb-c09021707e80.jpeg" alt="Profile Image"
@@ -75,9 +80,9 @@
             </div>
         </div>
     </section>
-    <!-- sở thích -->
+    <!-- so thích -->
     <section class="hobbies" id="hobbies">
-        <h1 class="sub-title">Hobbies</h1>
+        <h2 class="sub-title">Hobbies</h2>
         <div class="hobbies-container">
             <div class="info-box">
                 <div class="info-content">
@@ -111,12 +116,12 @@
             </div>
         </div>
     </section>
-    <!-- skills -->
+    <!-- ký năng -->
     <section class="skills" id="skills">
-        <h1 class="sub-title">My <span>Skills</span></h1>
+        <h2 class="sub-title">My <span>Skills</span></h2>
         <div class="skills-container">
             <div class="skills-left">
-                <h2 class="heading1">Languages & Tools</h2>
+                <h3 class="heading1">Languages & Tools</h3>
                 <ul class="skill-list">
                     <li><i class='bx bxl-html5'></i> HTML</li>
                     <li><i class='bx bxl-figma'></i> Figma</li>
@@ -127,56 +132,56 @@
                 </ul>
             </div>
             <div class="skills-right">
-                <h2 class="heading1">Technical Skills</h2>
+                <h3 class="heading1">Technical Skills</h3>
                 <div class="skill-bar">
                     <div class="info">
                         <p>HTML</p>
                         <p>72%</p>
                     </div>
-                    <div class="bar"><span class="html"></span></div>
+                    <div class="bar"><span style="--skill-width: 72%;"></span></div>
                 </div>
                 <div class="skill-bar">
                     <div class="info">
                         <p>Figma</p>
                         <p>72%</p>
                     </div>
-                    <div class="bar"><span class="figma"></span></div>
+                    <div class="bar"><span style="--skill-width: 72%;"></span></div>
                 </div>
                 <div class="skill-bar">
                     <div class="info">
                         <p>JavaScript</p>
                         <p>65%</p>
                     </div>
-                    <div class="bar"><span class="javascript"></span></div>
+                    <div class="bar"><span style="--skill-width: 65%;"></span></div>
                 </div>
                 <div class="skill-bar">
                     <div class="info">
                         <p>Nodejs</p>
                         <p>67%</p>
                     </div>
-                    <div class="bar"><span class="Nodejs"></span></div>
+                    <div class="bar"><span style="--skill-width: 67%;"></span></div>
                 </div>
                 <div class="skill-bar">
                     <div class="info">
                         <p>CSS</p>
                         <p>74%</p>
                     </div>
-                    <div class="bar"><span class="css"></span></div>
+                    <div class="bar"><span style="--skill-width: 74%;"></span></div>
                 </div>
                 <div class="skill-bar">
                     <div class="info">
                         <p>React</p>
                         <p>70%</p>
                     </div>
-                    <div class="bar"><span class="React"></span></div>
+                    <div class="bar"><span style="--skill-width: 70%;"></span></div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- project -->
+    <!-- dự án  -->
     <section id="projects" class="projects">
         <div class="container">
-            <h1 class="sub-title">My <span>Project</span></h1>
+            <h2 class="sub-title">My <span>Project</span></h2>
             <div class="project-item">
                 <a href="https://anh26092005.github.io/docter-figma/" target="_blank" rel="noopener"
                     class="project-link-wrapper">
@@ -221,16 +226,24 @@
         <form action="https://formspree.io/f/YOUR_UNIQUE_HASH" method="POST">
             <div class="input-group">
                 <div class="input-box">
-                    <input type="text" placeholder="Full Name" required name="full_name">
-                    <input type="email" placeholder="Email" required name="email">
+                    <label for="full-name" class="sr-only">Full Name</label>
+                    <input type="text" id="full-name" placeholder="Full Name" required name="full_name">
+
+                    <label for="email" class="sr-only">Email</label>
+                    <input type="email" id="email" placeholder="Email" required name="email">
                 </div>
                 <div class="input-box">
-                    <input type="text" placeholder="Phone Number" name="phone_number">
-                    <input type="text" placeholder="Subject" name="subject">
+                    <label for="phone-number" class="sr-only">Phone Number</label>
+                    <input type="text" id="phone-number" placeholder="Phone Number" name="phone_number">
+
+                    <label for="subject" class="sr-only">Subject</label>
+                    <input type="text" id="subject" placeholder="Subject" name="subject">
                 </div>
             </div>
             <div class="input-group-2">
-                <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                <label for="message" class="sr-only">Your Message</label>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message"
+                    required></textarea>
                 <input type="submit" value="Send Message" class="btn">
             </div>
         </form>
