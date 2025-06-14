@@ -308,6 +308,16 @@ section {
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 2rem;
 }
+.awards-container {
+  /* Gộp cả 2 class để áp dụng chung style */
+  display: grid;
+  /* THAY ĐỔI DÒNG NÀY ĐỂ CỐ ĐỊNH 3 CỘT */
+  grid-template-columns: repeat(
+    3,
+    1fr
+  ); /* Cố định layout thành 3 cột bằng nhau */
+  gap: 2.5rem; /* Có thể tăng gap một chút cho thoáng hơn */
+}
 .info-box {
   background: transparent;
   border: 3px solid var(--main-color);
