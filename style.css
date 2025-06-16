@@ -357,7 +357,7 @@ section {
 #hobby-music:hover::before {
   opacity: 1;
   background-image: linear-gradient(rgba(8, 8, 8, 0.2), rgba(8, 8, 8, 0.2)),
-    url("../img/music1.png"), url("../img/music2.png");
+    url("../img/music1.png"), url("./img/music9.jpg");
   background-position: center, left center, right center;
   background-size: cover, 50% 100%, 50% 100%;
   background-repeat: no-repeat;
