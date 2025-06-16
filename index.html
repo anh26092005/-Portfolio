@@ -5,16 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ngô Hoàng Anh - Portfolio</title>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
-
     <link rel="stylesheet" href="style.css">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 </head>
-<!-- video black ground -->
 
 <body>
     <div class="video-background">
@@ -23,49 +20,49 @@
             <source src="./img/1175-143563015_medium.mp4" type="video/mp4">
         </video>
     </div>
+
     <header class="header">
-        <a href="#home" class="logo" aria-label="Trang chủ Ngô Hoàng Anh"></a>
+        <a href="#home" class="logo" aria-label="Trang chủ Ngô Hoàng Anh"><span></span></a>
         <i class="bx bx-menu" id="menu-icon"></i>
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
             <a href="#about">About</a>
             <a href="#hobbies">Hobbies</a>
             <a href="#skills">Skills</a>
-            <a href="#projects">Project</a>
             <a href="#awards">Awards</a>
 
+
+            <a href="#projects">Project</a>
+
         </nav>
+        <div class="btn-group">
+            <a href="./img/NgoHoangAnhcv.pdf" class="btn" target="_blank" rel="noopener">Download CV</a>
+        </div>
     </header>
-    <!-- menu -->
+
     <section class="home" id="home">
         <div class="home-content">
-            <h1>Hi, It's <span>HoangAnh</span></h1>
+            <h1>Hi, I am <span>HoangAnh</span></h1>
             <h3>I'm a <span>Backend Developer</span></h3>
-            <p>Passionate about building robust and scalable web applications with a focus on backend development.I
-                enjoy turning complex problems into elegant backend solutions, and I'm always eager to learn new
-                technologies and improve my skills.
-            </p>
-
-            <div class="social-icons">
-                <a href="https://www.facebook.com/hoang.anh.447742" target="_blank" rel="noopener"
-                    aria-label="Facebook"><i class="bx bxl-facebook"></i></a>
-                <a href="https://www.instagram.com/ng.h.anh21/" target="_blank" rel="noopener" aria-label="Instagram"><i
-                        class="bx bxl-instagram"></i></a>
-                <a href="https://github.com/anh26092005" target="_blank" rel="noopener" aria-label="GitHub"><i
-                        class="bx bxl-github"></i></a>
-                <a href="https://www.linkedin.com/in/ho%C3%A0ng-anh-anh-30158034b/" target="_blank" rel="noopener"
-                    aria-label="LinkedIn"><i class="bx bxl-linkedin-square"></i></a>
-            </div>
-            <div class="btn-group">
-                <a href="./img/NgoHoangAnhcv.pdf" class="btn" target="_blank" rel="noopener">Download
-                    CV</a>
-            </div>
+            <p>Passionate about building robust and scalable web applications with a focus on backend development. I
+                enjoy turning complex problems into elegant backend solutions.</p>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/hoang.anh.447742" target="_blank" rel="noopener" aria-label="Facebook"><i
+                    class="bx bxl-facebook"></i></a>
+            <a href="https://www.instagram.com/ng.h.anh21/" target="_blank" rel="noopener" aria-label="Instagram"><i
+                    class="bx bxl-instagram"></i></a>
+            <a href="https://github.com/anh26092005" target="_blank" rel="noopener" aria-label="GitHub"><i
+                    class="bx bxl-github"></i></a>
+            <a href="https://www.linkedin.com/in/ho%C3%A0ng-anh-anh-30158034b/" target="_blank" rel="noopener"
+                aria-label="LinkedIn"><i class="bx bxl-linkedin-square"></i></a>
+        </div>
         </div>
         <div class="home-img">
             <img class="img13" src="./img/Screenshot 2025-06-11 230336.png" alt="Profile Image">
         </div>
     </section>
-    <!-- about -->
+
     <section class="about" id="about">
         <div class="home-img">
             <img class="img12" src="./img/2ae71279-d732-465b-a4cb-c09021707e80.jpeg" alt="Profile Image"
@@ -74,35 +71,42 @@
         <div class="about-content">
             <div class="about-box">
                 <h2>About <span>Me</span></h2>
-                <i class='bx bx-school'></i>
-                <p> <i class='bx bx-school'></i> I'm Ngô Hoàng Anh, a second-year Information Technology student at the
-                    University Ho Chi Minh city of Transport and
-                    Communications (UTH) in Ho Chi Minh City. I have a strong passion for web development and am
-                    continuously learning to become a professional developer. I'm especially interested in frontend
-                    development and building modern, user-friendly websites.</p>
+                <ul class="contact-info-list">
+
+
+                    <li><i class='bx bxs-school'></i><span>Second-year student at University of Transport and
+                            Communications (UTH)</span></li>
+                    <li><i class='bx bxs-map-pin'></i><span>25 Tân Chánh Hiệp, Quận 12, TP. Hồ Chí Minh</span></li>
+                    <li><i class='bx bxs-phone'></i><span>+84 827 526 857</span></li>
+
+                    <li><i class='bx bxs-flag'></i>
+                        <span> Become a professional backend developer
+                        </span>
+                    </li>
+                </ul>
 
             </div>
         </div>
     </section>
-    <!-- so thích -->
+
     <section class="hobbies" id="hobbies">
         <h2 class="sub-title">Hobbies</h2>
         <div class="hobbies-container">
-            <div class="info-box">
+            <div class="info-box" id="hobby-books">
                 <div class="info-content">
                     <i class="bx bx-book-open"></i>
                     <h4>Reading Books</h4>
                     <p>I love diving into tech books and novels to expand my knowledge and spark creativity.</p>
                 </div>
             </div>
-            <div class="info-box">
+            <div class="info-box" id="hobby-music">
                 <div class="info-content">
                     <i class="bx bx-headphone"></i>
                     <h4>Listening to Music</h4>
                     <p>Music keeps me relaxed and focused while coding or exploring new ideas.</p>
                 </div>
             </div>
-            <div class="info-box">
+            <div class="info-box" id="hobby-games">
                 <div class="info-content">
                     <i class="bx bx-joystick"></i>
                     <h4>Playing Games</h4>
@@ -110,115 +114,104 @@
                     </p>
                 </div>
             </div>
-            <div class="info-box">
-                <div class="info-content">
-                    <i class="bx bx-code-alt"></i>
-                    <h4>Programming & Exploring</h4>
-                    <p>I enjoy building side projects and experimenting with new tools and frameworks to stay ahead in
-                        tech.</p>
-                </div>
-            </div>
         </div>
     </section>
-    <!-- ký năng -->
+    <!-- skills -->
     <section class="skills" id="skills">
         <h2 class="sub-title">My <span>Skills</span></h2>
         <div class="skills-container">
-            <div class="skills-left">
-                <h3 class="heading1">Languages & Tools</h3>
-                <ul class="skill-list">
-                    <li><i class='bx bxl-html5'></i> HTML</li>
-                    <li><i class='bx bxl-figma'></i> Figma</li>
-                    <li><i class='bx bxl-javascript'></i> JavaScript</li>
-                    <li><i class='bx bxl-nodejs'></i> Nodejs</li>
-                    <li><i class='bx bxl-css3'></i> CSS</li>
-                    <li><i class='bx bxl-react'></i> React</li>
-                </ul>
-            </div>
+
             <div class="skills-right">
                 <h3 class="heading1">Technical Skills</h3>
+
                 <div class="skill-bar">
                     <div class="info">
-                        <p>HTML</p>
+                        <p><i class="bx bxl-java" style="color: #ffca28;"></i> Java</p>
                         <p>72%</p>
                     </div>
                     <div class="bar"><span style="--skill-width: 72%;"></span></div>
                 </div>
+
                 <div class="skill-bar">
                     <div class="info">
-                        <p>Figma</p>
-                        <p>72%</p>
-                    </div>
-                    <div class="bar"><span style="--skill-width: 72%;"></span></div>
-                </div>
-                <div class="skill-bar">
-                    <div class="info">
-                        <p>JavaScript</p>
+                        <p><i class="bx bxl-javascript" style="color: #f7df1e;"></i> JavaScript</p>
                         <p>65%</p>
                     </div>
                     <div class="bar"><span style="--skill-width: 65%;"></span></div>
                 </div>
+
                 <div class="skill-bar">
                     <div class="info">
-                        <p>Nodejs</p>
-                        <p>67%</p>
-                    </div>
-                    <div class="bar"><span style="--skill-width: 67%;"></span></div>
-                </div>
-                <div class="skill-bar">
-                    <div class="info">
-                        <p>CSS</p>
-                        <p>74%</p>
-                    </div>
-                    <div class="bar"><span style="--skill-width: 74%;"></span></div>
-                </div>
-                <div class="skill-bar">
-                    <div class="info">
-                        <p>React</p>
+                        <p><i class="bx bxl-html5" style="color: #c95d2e;"></i> HTML</p>
                         <p>70%</p>
                     </div>
                     <div class="bar"><span style="--skill-width: 70%;"></span></div>
                 </div>
+
+                <div class="skill-bar">
+                    <div class="info">
+                        <p><i class="bx bxl-css3" style="color: #147cce;"></i> CSS</p>
+                        <p>70%</p>
+                    </div>
+                    <div class="bar"><span style="--skill-width: 70%;"></span></div>
+                </div>
+
+                <div class="skill-bar">
+                    <div class="info">
+                        <p><i class="bx bxl-react" style="color: #61dafb;"></i> React</p>
+                        <p>72%</p>
+                    </div>
+                    <div class="bar"><span style="--skill-width: 72%;"></span></div>
+                </div>
+
+                <div class="skill-bar">
+                    <div class="info">
+                        <p><i class='bx bxl-figma' style="color: #a259ff;"></i> Figma</p>
+                        <p>74%</p>
+                    </div>
+                    <div class="bar"><span style="--skill-width: 74%;"></span></div>
+                </div>
+
+                <div class="skill-bar">
+                    <div class="info">
+                        <p><i class="bx bxl-nodejs" style="color: #339933;"></i> Node.js</p>
+                        <p>70%</p>
+                    </div>
+                    <div class="bar"><span style="--skill-width: 70%;"></span></div>
+                </div>
+
             </div>
         </div>
     </section>
-    <section class="awards" id="awards">
-        <h2 class="sub-title">My <span class="text-primary">Awards</span></h2>
-
+    <section id="awards" class="awards-section">
+        <h2 class="sub-title">My <span>Awards</span></h2>
         <div class="awards-container">
             <div class="info-box">
                 <div class="info-content">
-                    <i class='bx bxs-award'></i>
-
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat molestias vero temporibus illum
-                        veniam voluptate quidem mollitia, totam nemo odio.</p>
+                    <i class='bx bxs-medal'></i>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat molestias vero temporibus
+                        illum.</p>
                 </div>
             </div>
-
             <div class="info-box">
                 <div class="info-content">
-                    <i class='bx bx-medal'></i>
-
-                    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. In et officiis sequi, eum eveniet
-                        dolores quos quaerat rem explicabo mollitia.</p>
+                    <i class='bx bxs-trophy'></i>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In et officiis sequi, eum eveniet.</p>
                 </div>
             </div>
-
             <div class="info-box">
                 <div class="info-content">
-                    <i class='bx bx-certification'></i>
-
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam aspernatur similique ipsam suscipit
-                        odio tenetur neque quibusdam veritatis ut ipsum!</p>
+                    <i class='bx bxs-certification'></i>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam aspernatur similique ipsam suscipit.
+                    </p>
                 </div>
             </div>
-
         </div>
     </section>
-    <!-- dự án  -->
     <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="sub-title">My <span>Project</span></h2>
+        <h2 class="sub-title">My <span>Project</span></h2>
+
+        <div class="project-container">
             <div class="project-item">
                 <a href="https://anh26092005.github.io/docter-figma/" target="_blank" rel="noopener"
                     class="project-link-wrapper">
@@ -233,10 +226,10 @@
                 <div class="project-details">
                     <h3>Project 1: Figma Doctor Dental Website</h3>
                     <p>A website is built using HTML, CSS.</p>
-                    <a href="https://github.com/anh26092005/docter-figma" target="_blank" rel="noopener">View on
-                        GitHub</a>
+                    <a href="https://github.com/anh26092005/docter-figma" target="_blank" rel="noopener">View more</a>
                 </div>
             </div>
+
             <div class="project-item">
                 <a href="https://anh26092005.github.io/figmashun1/" target="_blank" rel="noopener"
                     class="project-link-wrapper">
@@ -251,43 +244,12 @@
                 <div class="project-details">
                     <h3>Project 2: Personal Portfolio Website</h3>
                     <p>A website is built using HTML, CSS.</p>
-                    <a href="https://github.com/anh26092005/figmashun1" target="_blank" rel="noopener">View on
-                        GitHub</a>
+                    <a href="https://github.com/anh26092005/figmashun1" target="_blank" rel="noopener">View more</a>
                 </div>
             </div>
         </div>
     </section>
-    <!-- contact -->
-    <!-- <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me</span></h2>
-        <form action="https://formspree.io/f/YOUR_UNIQUE_HASH" method="POST">
-            <div class="input-group">
-                <div class="input-box">
-                    <label for="full-name" class="sr-only">Full Name</label>
-                    <input type="text" id="full-name" placeholder="Full Name" required name="full_name">
 
-                    <label for="email" class="sr-only">Email</label>
-                    <input type="email" id="email" placeholder="Email" required name="email">
-                </div>
-                <div class="input-box">
-                    <label for="phone-number" class="sr-only">Phone Number</label>
-                    <input type="text" id="phone-number" placeholder="Phone Number" name="phone_number">
-
-                    <label for="subject" class="sr-only">Subject</label>
-                    <input type="text" id="subject" placeholder="Subject" name="subject">
-                </div>
-            </div>
-            <div class="input-group-2">
-                <label for="message" class="sr-only">Your Message</label>
-                <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message"
-                    required></textarea>
-                <input type="submit" value="Send Message" class="btn">
-            </div>
-        </form>
-    </section> -->
-    <!-- awards -->
-
-    <!-- footer -->
     <footer class="footer">
         <div class="social-icons">
             <a href="https://www.facebook.com/hoang.anh.447742" target="_blank" rel="noopener" aria-label="Facebook"><i
@@ -299,14 +261,11 @@
             <a href="https://www.linkedin.com/in/ho%C3%A0ng-anh-anh-30158034b/" target="_blank" rel="noopener"
                 aria-label="LinkedIn"><i class="bx bxl-linkedin-square"></i></a>
         </div>
-        <ul class="list">
-            <li><a href="#contact">FAQ</a></li>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
         <p class="copyright">© 2025 Ngô Hoàng Anh</p>
     </footer>
-
+    <a href="#" class="back-to-top-btn" id="backToTopBtn" title="Về đầu trang">
+        <i class='bx bx-chevrons-up'></i>
+    </a>
     <script src="main.js"></script>
 </body>
 
