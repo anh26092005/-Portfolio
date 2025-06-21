@@ -353,11 +353,10 @@ section {
 #hobbies .info-box:hover .info-content {
   opacity: 0;
 }
-
 #hobby-music:hover::before {
   opacity: 1;
   background-image: linear-gradient(rgba(8, 8, 8, 0.2), rgba(8, 8, 8, 0.2)),
-    url("/img/music1.png"), url("/img/music9.jpg");
+    url("./img/music1.png"), url("./img/music9.jpg");
   background-position: center, left center, right center;
   background-size: cover, 50% 100%, 50% 100%;
   background-repeat: no-repeat;
@@ -366,7 +365,7 @@ section {
 #hobby-games:hover::before {
   opacity: 1;
   background-image: linear-gradient(rgba(8, 8, 8, 0.2), rgba(8, 8, 8, 0.2)),
-    url("/img/game1.png"), url("/img/game3png.png");
+    url("./img/game1.png"), url("./img/game3png.png");
   background-position: center, left center, right center;
   background-size: cover, 50% 100%, 50% 100%;
   background-repeat: no-repeat;
