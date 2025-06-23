@@ -370,7 +370,9 @@ section {
   background-size: cover, 50% 100%, 50% 100%;
   background-repeat: no-repeat;
 }
-
+.hover-contact a:hover {
+  color: #00ff51;
+}
 /* Skills Section */
 .skills-container {
   display: grid;
